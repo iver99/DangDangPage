@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>当当图书 – 全球最大的中文网上书店</title>
+		<link href="./css/book.css" rel="stylesheet" type="text/css" />
+		<link href="./css/second.css" rel="stylesheet" type="text/css" />
+		<link href="./css/secBook_Show.css" rel="stylesheet" type="text/css" />
+		<link href="./css/book_head090107.css" rel="stylesheet" type="text/css"></link>
+		<script type="text/javascript" src="./js/jquery-1.4.min.js"></script>
+		<script type="text/javascript">
+		 // 鼠标over显示书图片
+		  $(function(){
+			var x = 10;
+			var y = 20;
+			$("img.dang_img").mouseover(function(e){
+				this.myTitle = this.title;
+				this.title = "";	
+				var imgTitle = this.myTitle? "<br/>" + this.myTitle : "";
+				var tooltip = "<div id='tooltip'><img height='200px' width='150px' src='"+ this.src +"' alt='产品预览图'/>"+imgTitle+"<\/div>"; //创建 div 元素
+				$("body").append(tooltip);	//把它追加到文档中		
+					 
+				$("#tooltip").css({
+						"top": (e.pageY+y) + "px",
+						"left":  (e.pageX+x)  + "px"
+					}).show("fast");	  //设置x坐标和y坐标，并且显示
+		    	}).mouseout(function(){
+					this.title = this.myTitle;	
+					$("#tooltip").remove();	 //移除 
+		    	}).mousemove(function(e){
+					$("#tooltip")
+						.css({
+							"top": (e.pageY+y) + "px",
+							"left":  (e.pageX+x)  + "px"
+						});
+				});
+			})
+			</script>
+		 
+	</head>
+	<body>
+		<!-- 头部开始 -->
+		<div class="head_container">
+			<div class="head_welcome">
+				<div class="head_welcome_right">
+					<span class="head_welcome_text"> </span>
+					<span class="head_welcome_text"> <span class="little_n">
+							| <a href="#" name="mydangdang" class="head_black12a">我的OBP</a> |
+							<a href="#" name="helpcenter" class="head_black12a"
+							 >帮助</a> | </span> </span>
+					<div class="cart gray4012">
+						<a href="#">购物车</a>
+					</div>
+				</div>
+				<span class="head_toutext" id="logininfo">
+					[&nbsp;<a href="loginForm.jsp" class="b">登录</a>|<a href="./registForm.jsp" class="b">注册</a>&nbsp;]
+					<b>您好 <font color="orange">张三，欢迎光临OBP</b>
+								[&nbsp;<a href="#" class="b">登出</a>&nbsp;]
+				</span>
+			</div>
+			<div class="head_head_list">
+				<div class="head_head_list_left">
+					<span class="head_logo"><a href="#" name="backtobook"><img
+								src="./images/booksaleimg/book_logo.gif" /> </a> </span>
+				</div>
+				<div class="head_head_list_right">
+
+					<div class="head_head_list_right_b">
+					</div>
+				</div>
+			</div>
+			<div class="head_search_div">
+
+			</div>
+			<div class="head_search_bg"></div>
+		</div>
+
+		<!-- 头部结束 -->
+		<div style="width: 962px; margin: auto;">
+			<a href="#"  ><img
+					src="./images/default/book_banner_081203.jpg" border="0" /> </a>
+		</div>
+
+		<div class="book">
+			<div class="book_l_border1" id="__FenLeiLiuLan">
+ 
+
+			<!--左栏开始-->
+			<div id="left" class="book_left">
+
+						<div class="book_l_border1" id="__FenLeiLiuLan">
+							<div class="book_sort_tushu">
+								<h2>
+									分类浏览
+								</h2>
+								<div class="bg_old" onmouseover="this.className = 'bg_white';"
+									onmouseout="this.className = 'bg_old';">
+									<h3>
+										[
+										<a href='bookList.jsp'>小说</a>]
+									</h3>
+									<ul class="ul_left_list">
+
+										<!--3级分类开始-->
+										<!--3级分类结束-->
+										<li>
+											<a href='bookList.jsp'>当代小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>言情小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>我的小说</a>
+										</li> 
+										<li>
+											<a href='bookList.jsp'>这的小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>假的小说</a>
+										</li>
+									</ul>
+									<div class="empty_left">
+									</div>
+								</div>
+								<div class="more2">
+								</div> 
+								
+								<div class="bg_old" onmouseover="this.className = 'bg_white';"
+									onmouseout="this.className = 'bg_old';">
+									<h3>
+										[
+										<a href='bookList.jsp'>恋爱</a>]
+									</h3>
+									<ul class="ul_left_list">
+
+										<!--3级分类开始-->
+										<!--3级分类结束-->
+										<li>
+											<a href='bookList.jsp'>当代小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>言情小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>我的小说</a>
+										</li> 
+										<li>
+											<a href='bookList.jsp'>这的小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>假的小说</a>
+										</li>
+									</ul>
+									<div class="empty_left">
+									</div>
+								</div>
+								<div class="more2">
+								</div>
+								
+								
+								<div class="bg_old" onmouseover="this.className = 'bg_white';"
+									onmouseout="this.className = 'bg_old';">
+									<h3>
+										[
+										<a href='bookList.jsp'>少儿</a>]
+									</h3>
+									<ul class="ul_left_list">
+
+										<!--3级分类开始-->
+										<!--3级分类结束-->
+										<li>
+											<a href='bookList.jsp'>当代小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>言情小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>我的小说</a>
+										</li> 
+										<li>
+											<a href='bookList.jsp'>这的小说</a>
+										</li>
+										<li>
+											<a href='bookList.jsp'>假的小说</a>
+										</li>
+									</ul>
+									<div class="empty_left">
+									</div>
+								</div>
+								<div class="more2">
+								</div>
+								
+								
+								<div class="bg_old">
+									<h3>
+										&nbsp;
+									</h3>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+			<!--左栏结束-->
+
+			<!--中栏开始-->
+			<div class="book_center">
+
+				<!--推荐图书开始-->
+				<div class=second_c_border1 id="recommend">
+
+
+					<h2>
+						<span class="more"><a href="#" target="" >更多&gt;&gt;</a>
+						</span>编辑推荐
+					</h2>
+					<div id=__bianjituijian/danpin>
+						<div class=second_c_02>
+
+							<div class=second_c_02_b1>
+								<div class=second_c_02_b1_1>
+									<a href='#'  ><img
+											class="dang_img" src="./productImages/16.jpg" width=70
+											border=0 /> </a>
+								</div>
+								<div class=second_c_02_b1_2>
+									<h3>
+										<a href='#'  >上课头疼的故事</a>
+									</h3>
+									<h4>
+										作者：我写的 著
+										<br />
+										出版社：地球出版社&nbsp;&nbsp;&nbsp;&nbsp;出版时间：
+									</h4>
+									<h5>
+										上课头疼的故事
+									</h5>
+									<h6>
+										定价：￥200.0&nbsp;&nbsp;当当价：￥180.0
+									</h6>
+									<div class=line_xx></div>
+								</div>
+							</div>
+
+							<div class=second_c_02_b1>
+								<div class=second_c_02_b1_1>
+									<a href='#'  ><img
+											class="dang_img" src="./productImages/17.jpg" width=70
+											border=0 /> </a>
+								</div>
+								<div class=second_c_02_b1_2>
+									<h3>
+										<a href='#'  >上课头疼的故事</a>
+									</h3>
+									<h4>
+										作者：我写的 著
+										<br />
+										出版社：地球出版社&nbsp;&nbsp;&nbsp;&nbsp;出版时间：
+									</h4>
+									<h5>
+										上课头疼的故事
+									</h5>
+									<h6>
+										定价：￥200.0&nbsp;&nbsp;当当价：￥180.0
+									</h6>
+									<div class=line_xx></div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+
+				</div>
+
+				<!--推荐图书结束-->
+
+				<!--热销图书开始-->
+				<div class="book_c_border2" id="hot">
+
+
+					<h2>
+						<span class="more"><a href="#"  >更多&gt;&gt;</a>
+						</span>热销图书
+					</h2>
+					<div class="book_c_04">
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img class="dang_img" src="./productImages/16.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img class="dang_img" src="./productImages/16.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img class="dang_img" src="./productImages/16.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img class="dang_img" src="./productImages/16.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--热销图书结束-->
+
+				<!--最新上架图书开始-->
+				<div class="book_c_border2" id="new">
+
+
+					<h2>
+						<span class="more"><a href="#"  >更多&gt;&gt;</a>
+						</span>最新上架图书
+					</h2>
+					<div class="book_c_04">
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/16.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/17.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/18.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/19.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/20.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/21.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/22.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+						<!--热销图书A开始-->
+						<div class="second_d_wai">
+							<div class="img">
+								<a href="#"  ><img
+										class="dang_img" src="./productImages/23.jpg" border=0 /> </a>
+							</div>
+							<div class="shuming">
+								<a href="#"  >上课头疼的故事</a>
+							</div>
+							<div class="price">
+								定价：￥200.0
+							</div>
+							<div class="price">
+								当当价：￥180.0
+							</div>
+						</div>
+						<div class="book_c_xy_long"></div>
+						<!--热销图书A结束-->
+
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--最新上架图书结束-->
+
+				<div class="clear">
+				</div>
+			</div>
+			<!--中栏结束-->
+
+
+
+			<!--右栏开始-->
+			<div class="book_right">
+				<div class="book_r_border2" id="__XinShuReMai">
+					<div class="book_r_b2_1x" id="hotboard">
+
+
+						<h2 class="t_xsrm">
+							<span class="more"><a href="#"  >更多&gt;&gt;</a> </span>
+							新书热卖榜
+						</h2>
+						<div id="NewProduct_1_o_t" onmouseover="">
+							<ul>
+								<li>
+									<a href="#1">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+
+								<li>
+									<a href="#">上课头疼的故事</a>
+								</li>
+								<span class="dot_r">&nbsp;</span>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--右栏结束-->
+			<div class="clear"></div>
+		</div>
+
+		<!--页尾开始 -->
+
+		<link href="./css/public_footer.css" rel="stylesheet" type="text/css" />
+		<div class="public_footer">
+			<div class="public_footer_bottom">
+				<div class="public_footer_icp" style="line-height: 48px;">
+					Copyright (C) Oacle 2011-2012, All Rights Reserved
+					<a href="#"  ><img
+							src="./images/bottom/validate.gif" border="0" align="middle" />
+					</a>
+					<a href="#"   style="color: #666;">京ICP证041189号</a>
+				</div>
+			</div>
+		</div>
+
+		<!--页尾结束 -->
+	</body>
+
+
+</html>

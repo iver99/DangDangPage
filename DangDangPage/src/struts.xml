@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- **************测试配置*************************** -->
+		<action name="test" class="com.iver99.action.TestAction">
+			<result name="success">/test.jsp</result>
+		</action>
+	
+		<action name="login" class="com.iver99.action.LoginAction">
+			<result name="success">/main.jsp</result>
+			<result name="error">/loginForm.jsp</result>
+			<result name="passDenied">/loginForm.jsp</result>
+		</action>
+		<action name="register" class="com.iver99.action.RegisterAction">
+			<result name="success">/main.jsp</result>
+			<result name="error">/test.jsp</result>
+		</action>
+	
+	</package>
+	
+</struts>

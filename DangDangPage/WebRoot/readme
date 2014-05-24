@@ -1,0 +1,4 @@
+bookInfo.jsp 每本书点进去的详细页面
+bookList.jsp 点击首页分类后跳入的页面，这里主要是分类的展示
+index.jsp 重定向
+loginForm.jsp 登录页面
